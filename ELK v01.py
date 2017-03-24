@@ -26,7 +26,8 @@ res = es.search(
         'query': {'match': {'_type': 'abpgen-log'}}
     },
     # size=10000
-    size=10
+    size=5,
+    from_=0
     )
 print '\n'
 print ("Got %d Hits:" %res['hits']['total'])
